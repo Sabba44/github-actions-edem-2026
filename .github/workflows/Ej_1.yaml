@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: First Step
-      run: echo ": $VAR1 Mondo"
+      run: echo "${{ env.VAR1 }} Mondo"
   job_2:
     runs-on: ubuntu-latest
     steps:
-    - name: First Step
-      run: echo ": $VAR1 Mondo, di nuovo"
+    - name: Second Step
+      run: echo "${{ env.VAR1 }} Mondo", di nuovo
