@@ -5,7 +5,7 @@ on:
 
 jobs:
   job_1:
-  run-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - name: Imprimir password
-      run: echo "${{ secrets.TEST_PASSWORD }}"
+      run: echo ${{ secrets.TEST_PASSWORD }}
