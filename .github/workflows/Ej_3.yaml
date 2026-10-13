@@ -1,4 +1,4 @@
-name: Matri
+name: Matrix
 on:
   workflow_dispatch:
 
