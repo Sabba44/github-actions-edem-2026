@@ -1,4 +1,4 @@
-name: Matriz
+name: Matri
 on:
   workflow_dispatch:
 
@@ -7,10 +7,10 @@ env:
 
 jobs:
   job_1:
-    runs-on:
-      strategy:
-        matrix:
-          os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
     steps:
     - name: First Step
       run: echo "${{ env.VAR1 }} Mondo"
