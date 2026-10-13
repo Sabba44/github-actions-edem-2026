@@ -3,14 +3,17 @@ name: Variable de entorno
 on:
   workflow_dispatch:
 
+env:
+  VAR1: "Ciao"
+
 jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
     - name: First Step
-      run: echo "${{ VAR1 }} Mondo"
+      run: echo ": $VAR1 Mondo"
   job_2:
     runs-on: ubuntu-latest
     steps:
     - name: First Step
-      run: echo "${{ VAR1 }} Mondo, di nuovo"
+      run: echo ": $VAR1 Mondo, di nuovo"
